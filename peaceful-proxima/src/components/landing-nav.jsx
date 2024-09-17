@@ -16,7 +16,7 @@ export default function LandingNav() {
             {name}
             <meshStandardMaterial color="#84D4FC" roughness={1} metalness={0} />
           </Text3D>
-          <Sparkles count={10} size={.1} color="#fff" position={[3, 0, 5]} scale={2} />
+          <Sparkles speed={.3} count={10} size={.1} color="#fff" position={[3, 0, 5]} scale={2} />
           <Text3D font={font} position={[-1, 0, 3.4]} rotation={[0, 0, 0]}>
             {name}
             <MeshDistortMaterial distort={.1} speed={.5} color="#457891" />

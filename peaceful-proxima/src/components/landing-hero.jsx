@@ -5,8 +5,6 @@ import font from './font.json';
 const HeroSection = () => {
   return (
     <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-linear-gradient-to-r from-[#fff] via-[#fff] to-[#5484C4]">
-      {/* Background with Stars */}
-
     <div className='absolute z-100 h-screen w-screen'>
     <Canvas style={{  top: 0, left: 0, right: 0, bottom: 0, zIndex: 1}} camera={{ fov: 50, position: [0, 0, 0] }}>
         <Sparkles position={[0,0,-1]} scale={2.5} color={"#cyan"} size={20} count={30} speed={.1} opacity={0.1}/>
