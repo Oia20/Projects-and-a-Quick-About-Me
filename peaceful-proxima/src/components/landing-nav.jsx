@@ -1,25 +1,32 @@
 import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { PerspectiveCamera, Text3D, MeshDistortMaterial } from '@react-three/drei';
+import { PerspectiveCamera, Text3D, MeshDistortMaterial, Sparkles} from '@react-three/drei';
 import font from './font.json';
-
 export default function LandingNav() {
   const name = "<Dement/>";
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 b ">
-      <div className="h-16 w-42 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full shadow-xl">
+    <div className='z-100 bg-neutral-900 border-b-1 border-color-black-900 w-full'>
+    <nav className="flex items-center justify-between flex-wrap b ml-1 mr-1 z-100 bg-color-black-200 rounded-full">
+      <div className="h-16 w-40 bg-gradient-to-r black-200 to-indigo-500 rounded-full">
         <Canvas>
-          <ambientLight intensity={1.2} />
-          <PerspectiveCamera makeDefault position={[3, .3, 6.4]} />
+          <PerspectiveCamera makeDefault position={[3, .3, 6.4]} fov={80} />
           <CameraControls />
+          <ambientLight intensity={.7} />
           <Text3D font={font} position={[-1, 0, 3.4]} rotation={[0, 0, 0]}>
             {name}
-            <MeshDistortMaterial distort={0.2} speed={2} color="yellow" />
+            <meshStandardMaterial color="#f39c12" roughness={1} metalness={0} />
+          </Text3D>
+          <Sparkles count={10} size={.1} color="#fff" position={[3, 0, 5]} scale={2} />
+          <Text3D font={font} position={[-1, 0, 3.4]} rotation={[0, 0, 0]}>
+            {name}
+            <MeshDistortMaterial distort={0.2} speed={2} color="#2ecc70" />
           </Text3D>
         </Canvas>
       </div>
+      <h1>Projects</h1>
     </nav>
+    </div>
   );
 }
 
