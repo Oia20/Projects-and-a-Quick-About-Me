@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import LandingNav from '../components/landing-nav.jsx';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<LandingNav client:visible/>
+	</main>
+</Layout>
