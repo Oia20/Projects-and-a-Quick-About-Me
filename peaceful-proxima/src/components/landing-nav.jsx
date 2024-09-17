@@ -23,9 +23,10 @@ export default function LandingNav() {
           </Text3D>
         </Canvas>
       </div>
-      <p className="text-cyan-800 text-m hover:text-cyan-500 cursor-pointer transition-all">Projects</p>
-      <p className="text-cyan-800 text-m hover:text-cyan-500 cursor-pointer transition-all">Contact</p>
-
+      <div className="flex justify-center flex-row mr-5">
+      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all mr-5">Projects</p>
+      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all">Contact</p>
+      </div>
     </nav>
     </div>
   );

@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import LandingNav from '../components/landing-nav.jsx';
 import HeroSection from '../components/landing-hero.jsx';
+import AboutMe from '../components/landing-about.jsx';
 ---
 
 <Layout title="Dement.dev">
 	<main>
 		<LandingNav client:visible/>
 		<HeroSection client:visible/>
+		<AboutMe client:visible/>
 	</main>
 </Layout>

@@ -1,0 +1,23 @@
+.about-section {
+    animation: slideInUp 1.2s ease-in-out;
+  }
+  
+  .about-details p {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-details p:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

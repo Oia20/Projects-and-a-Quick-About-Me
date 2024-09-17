@@ -2,22 +2,25 @@ import React from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { PerspectiveCamera, Text3D, MeshDistortMaterial, Sparkles} from '@react-three/drei';
 import font from './font.json';
+import "./HeroSection.css"
 const HeroSection = () => {
   return (
-    <section className="relative bg-black text-white min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-linear-gradient-to-r from-[#fff] via-[#fff] to-[#5484C4]">
+    <section className="relative bg-black text-white min-h-screen flex justify-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-linear-gradient-to-r from-[#fff] via-[#fff] to-[#5484C4]">
+      {/* Add a linear gradient from top to bottom. */}
+      <div className='gradient-thingy'></div>
     <div className='absolute z-100 h-screen w-screen'>
     <Canvas style={{  top: 0, left: 0, right: 0, bottom: 0, zIndex: 1}} camera={{ fov: 50, position: [0, 0, 0] }}>
-        <Sparkles position={[0,0,-1]} scale={2.5} color={"#cyan"} size={20} count={30} speed={.1} opacity={0.1}/>
+        <Sparkles position={[0,0,-1]} scale={2} color={"#cyan"} size={25} count={30} speed={.1} opacity={0.1}/>
     </Canvas>
     </div>
       {/* Content */}
-      <div className="relative z-10 text-center space-y-6 max-w-4xl p-6">
+      <div className="relative z-10 text-center space-y-6 max-w-4xl p-6 lg:mt-10 self-center lg:self-start">
         {/* Profile Image */}
         <div className="flex justify-center mb-6">
           <img 
             src="https://avatars.githubusercontent.com/u/92279567?s=400&u=e95fc1c190b5ed4d42898d9deef6ad710eebec88&v=4" 
             alt="Your Name" 
-            className="w-32 h-32 sm:w-48 sm:h-48 rounded-full shadow-xl border-4 border-[#537A9D] transform hover:scale-105 transition duration-500" 
+            className="w-48 h-48 sm:w-48 sm:h-48 rounded-full shadow-xl border-4 border-[#537A9D] transform hover:scale-105 transition duration-500" 
           />
         </div>
 
