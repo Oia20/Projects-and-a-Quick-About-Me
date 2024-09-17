@@ -4,27 +4,28 @@ import { PerspectiveCamera, Text3D, MeshDistortMaterial, Sparkles} from '@react-
 import font from './font.json';
 export default function LandingNav() {
   const name = "<Dement/>";
-
   return (
-    <div className='z-100 bg-neutral-900 border-b-1 border-color-black-900 w-full'>
+    <div className='z-100 bg-black-900 border-b-1 border-color-black-900 w-full'>
     <nav className="flex items-center justify-between flex-wrap b ml-1 mr-1 z-100 bg-color-black-200 rounded-full">
-      <div className="h-16 w-40 bg-gradient-to-r black-200 to-indigo-500 rounded-full">
+      <div className="h-16 w-40 bg-gradient-to-r black-200 to-indigo-500 rounded-full hover:scale-110 transition duration-500 hover:shadow-xl hover:shadow-black-900 hover:cursor-pointer">
         <Canvas>
-          <PerspectiveCamera makeDefault position={[3, .3, 6.4]} fov={80} />
+          <PerspectiveCamera makeDefault position={[3, .3, 6.4]} fov={60} />
           <CameraControls />
-          <ambientLight intensity={.7} />
+          <ambientLight intensity={1.2} />
           <Text3D font={font} position={[-1, 0, 3.4]} rotation={[0, 0, 0]}>
             {name}
-            <meshStandardMaterial color="#f39c12" roughness={1} metalness={0} />
+            <meshStandardMaterial color="#84D4FC" roughness={1} metalness={0} />
           </Text3D>
           <Sparkles count={10} size={.1} color="#fff" position={[3, 0, 5]} scale={2} />
           <Text3D font={font} position={[-1, 0, 3.4]} rotation={[0, 0, 0]}>
             {name}
-            <MeshDistortMaterial distort={0.2} speed={2} color="#2ecc70" />
+            <MeshDistortMaterial distort={.1} speed={.5} color="#457891" />
           </Text3D>
         </Canvas>
       </div>
-      <h1>Projects</h1>
+      <p className="text-cyan-800 text-m hover:text-cyan-500 cursor-pointer transition-all">Projects</p>
+      <p className="text-cyan-800 text-m hover:text-cyan-500 cursor-pointer transition-all">Contact</p>
+
     </nav>
     </div>
   );
