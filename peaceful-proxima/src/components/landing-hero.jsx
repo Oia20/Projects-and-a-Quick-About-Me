@@ -26,7 +26,7 @@ const HeroSection = () => {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-[#84D4FC] via-[#5484C4] to-[#5484C4] bg-clip-text text-transparent animate-text-glow">
-          Hi! I'm Jacob Dement
+          Hi! I'm Jacob Dement!
         </h1>
 
         {/* Subtext */}
