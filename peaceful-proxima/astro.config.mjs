@@ -9,5 +9,5 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://Oia20.github.io',
-  base: '/react-ssg-three-fiber',
+  base: '/React-SSG-Three-Fiber/',
 });
