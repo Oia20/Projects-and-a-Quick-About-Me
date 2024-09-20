@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Monthly Canvas',
     about: 'A simple project which displays a different painting every month. The server sleeps until requested to save compute, so it made load slowly.',
-    photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/13d-port.png',
+    photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/1canvas-port.png',
     techStack: ['React', 'Docker', 'PostgreSQL', 'C#', 'JavaScript', '\.Net'],
     github: 'https://github.com/Oia20/monthly-canvas',
     website: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/1canvas-port.png',
@@ -52,9 +52,9 @@ const projects = [
   },
   {
     title: 'OCR Automation Discord Bot',
-    about: 'Computer Vision, Text Extraction, and Authomated data entry discord bot, saving 10+ hours of work a month.',
+    about: 'Computer Vision, Text Extraction, and Automated data entry discord bot, saving 10+ hours of work a month.',
     photo: 'https://oia20.github.io/Projects/eye.png',
-    techStack: ['Python', 'Google Clous Platform', 'Open Computer Vision'],
+    techStack: ['Python', 'Google Cloud Platform', 'Open Computer Vision'],
     youtubeDemo: 'https://www.youtube.com/watch?v=8DBiJJX9OX0&ab_channel=JacobDementDemos',
   }
 
@@ -73,7 +73,7 @@ const Portfolio = () => {
       ))}
     </div>
     <div className='flex width-screen justify-center align-center m-6'>
-    <button className='flex justify-center align-center p-2 m-2 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full shadow-xl hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300' onClick={() => window.location.href="https://github.com/Oia20"}>View more of my work on Github</button>
+    <button className='inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer' onClick={() => window.location.href="https://github.com/Oia20"}>View more of my work on Github</button>
     </div>
     </>
   );

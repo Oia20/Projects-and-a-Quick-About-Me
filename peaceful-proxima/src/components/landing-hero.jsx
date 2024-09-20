@@ -24,7 +24,7 @@ const HeroSection = () => {
         {/* Profile Image */}
         <div className="flex justify-center mb-6">
           <img
-            src="https://avatars.githubusercontent.com/u/92279567?s=400&u=e95fc1c190b5ed4d42898d9deef6ad710eebec88&v=4"
+            src="https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/me.png"
             alt="Your Name"
             className="w-48 h-48 sm:w-48 sm:h-48 rounded-full shadow-xl border-4 border-[#537A9D] transform hover:scale-105 transition duration-500"
           />

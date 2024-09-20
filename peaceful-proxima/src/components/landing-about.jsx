@@ -17,8 +17,17 @@ const AboutMe = () => {
           <p>🔧 Creative problem-solver, always finding a way to get things done.</p>
           <p>🎓 Studied Computer Science at Louisiana Delta Community College.</p>
           <p>📖 Life long learner, curious about everything in the cosmos.</p>
-          <p></p>
         </div>
+      </div>
+      <div className='flex width-screen justify-center align-center m-6 mt-12'>
+        <button
+          className="m-2 inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer">
+            Github
+        </button>
+        <button
+          className="m-2 inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer">
+            LinkedIn
+        </button>
       </div>
     </section>
   );

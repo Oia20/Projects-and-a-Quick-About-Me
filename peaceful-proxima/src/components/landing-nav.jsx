@@ -31,7 +31,7 @@ export default function LandingNav() {
         </Canvas>
       </div>
       <div className="flex justify-center flex-row mr-5">
-      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all mr-5" onClick={scrollToProjects}>Projects</p>
+      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all mr-5" onClick={scrollToProjects}>My Work</p>
       </div>
     </nav>
     </div>
