@@ -4,6 +4,9 @@ import { PerspectiveCamera, Text3D, MeshDistortMaterial, Sparkles} from '@react-
 import font from './font.json';
 export default function LandingNav() {
   const name = "<Dement/>";
+  const scrollToProjects = () => {
+    window.scrollTo({ top: 1250, behavior: 'smooth' });
+  };
   return (
     <div className='z-100 bg-black-900 border-b-1 border-color-black-900 w-full'>
     <nav className="flex items-center justify-between flex-wrap b ml-1 mr-1 z-100 bg-color-black-200 rounded-full">
@@ -24,8 +27,7 @@ export default function LandingNav() {
         </Canvas>
       </div>
       <div className="flex justify-center flex-row mr-5">
-      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all mr-5">Projects</p>
-      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all">Contact</p>
+      <p className="text-cyan-500 text-m hover:text-cyan-700 cursor-pointer transition-all mr-5" onClick={scrollToProjects}>Projects</p>
       </div>
     </nav>
     </div>

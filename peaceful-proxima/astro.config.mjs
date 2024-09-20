@@ -8,6 +8,6 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: 'https://Oia20.github.io',
-  base: '/React-SSG-Three-Fiber/',
+  // site: 'https://Oia20.github.io',
+  // base: '/React-SSG-Three-Fiber/',
 });

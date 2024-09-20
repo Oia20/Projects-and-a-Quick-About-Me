@@ -1,9 +1,12 @@
 ---
+import { useRef } from 'react';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import LandingNav from '../components/landing-nav.jsx';
 import HeroSection from '../components/landing-hero.jsx';
 import AboutMe from '../components/landing-about.jsx';
+import Portfolio from '../components/landing-projects.jsx';
+
 ---
 
 <Layout title="Dement.dev">
@@ -11,5 +14,7 @@ import AboutMe from '../components/landing-about.jsx';
 		<LandingNav client:visible/>
 		<HeroSection client:visible/>
 		<AboutMe client:visible/>
+		<Portfolio client:visible/>
+		
 	</main>
 </Layout>

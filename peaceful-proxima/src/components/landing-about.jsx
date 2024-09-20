@@ -12,11 +12,12 @@ const AboutMe = () => {
           Full Stack Software Engineer building things hopefully useful to others.
         </p>
         <div className="text-left space-y-4 about-details">
-          <p>🐊 I'm from Louisiana.</p>
+          <p>🐊 I'm from West Monroe, Louisiana.</p>
           <p>💡 Stack agnostic, I believe once you understand the patterns common accross frameworks, you can build with anything.</p>
           <p>🔧 Creative problem-solver, always finding a way to get things done.</p>
           <p>🎓 Studied Computer Science at Louisiana Delta Community College.</p>
           <p>📖 Life long learner, curious about everything in the cosmos.</p>
+          <p></p>
         </div>
       </div>
     </section>
