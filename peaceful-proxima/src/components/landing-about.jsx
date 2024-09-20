@@ -21,10 +21,12 @@ const AboutMe = () => {
       </div>
       <div className='flex width-screen justify-center align-center m-6 mt-12'>
         <button
+          onClick={() => window.location.href="https://github.com/Oia20"}
           className="m-2 inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer">
             Github
         </button>
         <button
+          onClick={() => window.location.href="https://www.linkedin.com/in/jacob-dement-35658b275/"}
           className="m-2 inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer">
             LinkedIn
         </button>
