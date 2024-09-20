@@ -5,9 +5,11 @@ import tailwind from '@astrojs/tailwind';
 
 import react from '@astrojs/react';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  // site: 'https://Oia20.github.io',
+  integrations: [tailwind(), react(), sitemap()],
+  site: 'https://jacob.dement.dev',
   // base: '/React-SSG-Three-Fiber/',
 });
