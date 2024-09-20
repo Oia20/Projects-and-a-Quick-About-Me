@@ -7,10 +7,14 @@ export default function LandingNav() {
   const scrollToProjects = () => {
     window.scrollTo({ top: 1250, behavior: 'smooth' });
   };
+
+  const goToHomepage = () => {
+    window.location.href = 'https://dement.dev';
+  };
   return (
     <div className='z-100 bg-black-900 border-b-1 border-color-black-900 w-full'>
     <nav className="flex items-center justify-between flex-wrap b ml-1 mr-1 z-100 bg-color-black-200 rounded-full">
-      <div className="h-16 w-40 bg-gradient-to-r black-200 to-indigo-500 rounded-full hover:scale-110 transition duration-500 hover:shadow-xl hover:shadow-black-900 hover:cursor-pointer">
+      <div onClick={goToHomepage} className="h-16 w-40 bg-gradient-to-r black-200 to-indigo-500 rounded-full hover:scale-110 transition duration-500 hover:shadow-xl hover:shadow-black-900 hover:cursor-pointer">
         <Canvas>
           <PerspectiveCamera makeDefault position={[3, .3, 6.4]} fov={60} />
           <CameraControls />

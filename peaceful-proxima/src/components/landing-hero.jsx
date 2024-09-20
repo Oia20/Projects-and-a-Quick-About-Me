@@ -41,12 +41,10 @@ const HeroSection = () => {
         </p>
 
         {/* Call to Action Button */}
-        <a
-          onClick={scrollToProjects}
-          className="inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300"
-        >
-          See My Work
-        </a>
+        <button
+        onClick={scrollToProjects}
+        className="inline-block bg-[#4770D6] hover:bg-[#537A9D] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 duration-300 hover:curser-pointer">See My Work</button>
+
       </div>
     </section>
   );

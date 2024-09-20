@@ -41,6 +41,16 @@ const ProjectCard = ({ project }) => {
               Website
             </a>
           )}
+          {project.youtubeDemo && (
+            <a
+              href={project.youtubeDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              Youtube Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
