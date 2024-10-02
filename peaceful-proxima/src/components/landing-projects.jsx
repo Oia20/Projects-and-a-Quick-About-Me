@@ -11,6 +11,14 @@ const projects = [
     website: 'https://formbee.dev',
   },
   {
+    title: 'Pop A Lock',
+    about: 'Open-Source daily puzzle game, its like wordle, but with numbers and hints instead of letters.',
+    photo: 'https://ayyjntjqttcwfulpvggm.supabase.co/storage/v1/object/public/artworks/Untitled%20design%20(6).png',
+    techStack: ['React', 'TypeScript', 'NodeJS', 'ExpressJS', 'PostgreSQL', 'Docker', 'TailwindCSS', 'CSS', 'TypeORM'],
+    github: 'https://github.com/Oia20/PopALockDaily',
+    website: 'https://popalock.dement.dev/',
+  },
+  {
     title: 'Artist CMS Portfolio',
     about: 'My partners art portfolio with a CMS I built from scratch.',
     photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/1art-port.png',
