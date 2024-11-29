@@ -35,6 +35,14 @@ const projects = [
     website: 'https://dement.dev',
   },
   {
+    title: '3D Room',
+    about: 'A 3D room which has interactive objects that tell you about my interests.',
+    photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/13d-port.png',
+    techStack: ['React', 'Three.js', 'CSS', 'Blender', 'JavaScript'],
+    github: 'https://github.com/Oia20/OldPortfolioAbout',
+    website: 'https://oia20.github.io/OldPortfolioAbout/',
+  },
+  {
     title: 'CropSQL',
     about: 'A web game I built to help people learn SQL. Implemented SQL logic from scatch.',
     photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/1sql-port.png',
