@@ -37,7 +37,7 @@ const projects = [
   {
     title: '3D Room',
     about: 'A 3D room which has interactive objects that tell you about my interests.',
-    photo: 'https://gliscfokeivkvdrwzlsv.supabase.co/storage/v1/object/public/Plugin%20images/13d-port.png',
+    photo: 'https://utfs.io/f/oMW3imFO9N6PBWiMYETb6CdqOHGBmZw78TS3nLuUvcNeXxhA',
     techStack: ['React', 'Three.js', 'CSS', 'Blender', 'JavaScript'],
     github: 'https://github.com/Oia20/OldPortfolioAbout',
     website: 'https://oia20.github.io/OldPortfolioAbout/',
